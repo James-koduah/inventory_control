@@ -1,0 +1,62 @@
+#inventory{
+    width: 90vw;
+    padding: 0 5vw;
+}
+
+#search_products{
+    width: 100%;
+    position: relative;
+    padding-top: 20px;
+}
+
+#p_h{
+    font-size: 2.5em;
+    font-weight: 600;
+    padding: 15px 0;
+    color: #555;
+}
+
+
+#results{
+    width: 100%;
+    min-height: 80vh;
+    box-shadow: 0px 0px 2px 2px var(--border-color);
+}
+
+.result{
+    width: 96%;
+    padding: 10px 2% 15px 2%;
+    border-bottom: 1px #ddd solid;
+    display: flex;
+}
+.result_img{
+    width: 50px;
+    height: 50px;
+    background: #999;
+}
+
+
+.result_text{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.result header{
+    font-size: 2.3em;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.result header i{
+    font-size: 70%;
+    color: #999;
+}
+
+.specs{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.9em;
+}
+.specs p{
+    margin-right: 15px;
+}

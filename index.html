@@ -1,0 +1,64 @@
+---
+title: Inventory Control
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include head.html %}
+    <link rel="stylesheet" href="/inventory/inventory.css">
+    <link rel="stylesheet" href="/transactions/transactions.css">
+    <link rel="stylesheet" href="/sell/sell.css">
+</head>
+<body>
+    <main>
+        <section id="inventory">
+            <div id="search_products">
+                <input id="search_box" type="text" placeholder="Search Product">
+            </div>
+            <header id="p_h">Products in Stock</header>
+            <div id="results">
+            </div>
+        </section>
+
+        <section id="sell">
+            <div id="sellProductDetails">
+                <div id="sellProductName">
+                    <input type="text" placeholder="Enter Product Name" id="sell_product_name">
+                    <div id="sell_matches"></div>
+                </div>
+                <input type="number" id="sell_product_qty" placeholder="Quantity">
+            </div>
+            <div id="sellProductPrice">
+                <p>Price:</p>
+                <p id="sellPricelist">0</p>
+            </div>
+            <button id="sellAddCart">Add to Cart</button>
+            <div id="sell_cart"></div>
+            <button id="sell_checkout">Go to Checkout</button>
+        </section>
+
+        <section id="transactions">
+            <div class="transaction"></div>
+            <div class="transaction"></div>
+            <div class="transaction"></div>
+            <div class="transaction"></div>
+            <div class="transaction"></div>
+            <div class="transaction"></div>
+            <div class="transaction"></div>
+            <div class="transaction"></div>
+        </section>
+
+        <section id="add_product"></section>
+
+        <section id="alerts"></section>
+
+    </main>
+
+    {% include menu.html %}
+    
+    <script src="base/base.js"></script>
+    <script src="inventory/inventory.js"></script>
+    <script src="/transactions/transactions.js"></script>
+    <script src="/sell/sell.js"></script>
+</body>
+</html>
